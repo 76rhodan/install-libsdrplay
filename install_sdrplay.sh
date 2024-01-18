@@ -104,14 +104,14 @@ mkdir -p /etc/s6-overlay/s6-rc.d/sdrplay/dependencies.d || exit 1
 
 # get the sdrplay files from github
 
-curl -s --location --output /etc/s6-overlay/s6-rc.d/sdrplay/run https://raw.githubusercontent.com/sdr-enthusiasts/install-libsdrplay/main/s6-overlay/s6-rc.d/sdrplay/run || exit 1
+curl -s --location --output /etc/s6-overlay/s6-rc.d/sdrplay/run https://raw.githubusercontent.com/76rhodan/install-libsdrplay/main/s6-overlay/s6-rc.d/sdrplay/run || exit 1
 chmod 755 /etc/s6-overlay/s6-rc.d/sdrplay/run || exit 1
 
-curl -s --location --output /etc/s6-overlay/s6-rc.d/sdrplay/type https://raw.githubusercontent.com/sdr-enthusiasts/install-libsdrplay/main/s6-overlay/s6-rc.d/sdrplay/type || exit 1
+curl -s --location --output /etc/s6-overlay/s6-rc.d/sdrplay/type https://raw.githubusercontent.com/76rhodan/install-libsdrplay/main/s6-overlay/s6-rc.d/sdrplay/type || exit 1
 
-curl -s --location --output /etc/s6-overlay/s6-rc.d/user/contents.d/sdrplay https://raw.githubusercontent.com/sdr-enthusiasts/install-libsdrplay/main/s6-overlay/s6-rc.d/user/contents.d/sdrplay
+curl -s --location --output /etc/s6-overlay/s6-rc.d/user/contents.d/sdrplay https://raw.githubusercontent.com/76rhodan/install-libsdrplay/main/s6-overlay/s6-rc.d/user/contents.d/sdrplay
 
-curl -s --location --output /etc/s6-overlay/scripts/sdrplay.sh https://raw.githubusercontent.com/sdr-enthusiasts/install-libsdrplay/main/s6-overlay/scripts/sdrplay.sh || exit 1
+curl -s --location --output /etc/s6-overlay/scripts/sdrplay.sh https://raw.githubusercontent.com/76rhodan/install-libsdrplay/main/s6-overlay/scripts/sdrplay.sh || exit 1
 chmod 755 /etc/s6-overlay/scripts/sdrplay.sh || exit 1
 
 # grab the sdr license service file from github
