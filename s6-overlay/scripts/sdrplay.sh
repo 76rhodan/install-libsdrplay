@@ -11,7 +11,7 @@ SCRIPT_NAME="${SCRIPT_NAME%.*}"
 s6wrap=(s6wrap --quiet --timestamps --prepend="$SCRIPT_NAME" --args)
 
 #shellcheck disable=SC2154
-if pgrep -x "sdrplay_apiService" > /dev/null
+if pidof -x "sdrplay_apiService" > /dev/null
 then
     echo "sdrplay api already running"
     exit 0
